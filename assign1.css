@@ -1,0 +1,302 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* To include padding and border in element's total width and height */
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* Font family stack represents default families default to different devices and fallback options */
+    /* Quotes are not used to defined generic single words families */
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* App container styling */
+#container-fullscreen {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 2000px;
+    min-width: 1000px;
+    min-height: 100vh;
+    background-color: rgb(207, 207, 207);
+}
+
+#container-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header styling */
+.header-app {
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(146, 103, 73);
+    color: white;
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-basis: 60%;
+}
+
+.header-top-title {
+    border: 3px solid white;
+    background-color: rgb(178, 131, 97);
+    text-align: left;
+    padding: 0.1rem 0.7rem;
+    border-radius: 0.2rem;
+}
+
+.header-bottom {
+    width: 100%;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 0.4rem;
+}
+
+.header-bottom-buttons {
+    flex-basis: fit-content;
+    border: white 2px solid;
+    background-color: rgb(178, 131, 97);
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    color: white;
+    font-size: medium;
+}
+
+.header-bottom-buttons-round-red {
+    flex-basis: fit-content;
+    border: white 2px solid;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: medium;
+    border-radius: 1rem;
+}
+
+/* Main content styling */
+.main-app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 5rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.main-app-card {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+
+.main-app-card-background-1 {
+    background-color: rgb(216, 207, 207);
+}
+
+.main-app-card-background-2 {
+    background-color: white;
+}
+
+.main-app-card-background-3 {
+    background-color: rgb(176, 160, 151);
+}
+
+.main-app-card-background-4 {
+    background-color: rgb(242, 237, 213);
+}
+
+.first-card-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.265);
+    color: white;
+    padding: 2rem;
+    border: white 2px solid;
+}
+
+.second-card-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(122, 89, 53);
+    padding: 2rem;
+}
+
+.second-card-content-subcards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.second-card-content-subcards-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.first-card-content h1 {
+    font-size: 3rem;
+}
+
+.gallery-icon-size {
+    color: rgb(133, 108, 85);
+}
+
+.first-card-content p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-app-card-button {
+    background-color: rgb(240, 145, 76);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    border: rgb(126, 0, 0) 1px solid;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.third-card-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    color: rgb(95, 69, 43);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.fourth-card-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    color: rgb(95, 69, 43);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.third-card-content-subcards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.third-card-content-subcards-card-left {
+    padding: 1rem;
+    width: 60%;
+}
+
+.third-card-content-subcards-card-right {
+    padding: 1rem;
+    border-left: 3px solid rgb(122, 89, 53);
+    width: 40%;
+}
+
+.did-you-know {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding: 1rem;
+    background-color: rgb(223, 203, 186);
+    text-align: left;
+    border: 3px solid rgb(122, 89, 53);
+    border-radius: 0.2rem;
+}
+
+.fourth-card-content-subcards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.fourth-card-content-subcards-card-left {
+    padding: 1rem;
+    width: 40%;
+    border: 3px dashed rgb(122, 89, 53);
+}
+
+.fourth-card-content-subcards-card-right {
+    padding: 2.3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+/* Footer styling */
+.footer-app {
+    width: 100%;
+    padding: 1rem 5rem;
+    background-color: rgb(146, 103, 73);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
